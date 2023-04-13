@@ -11,18 +11,17 @@ import jakarta.persistence.Table;
 
 //classname as table name
 
-@Table(name = "mahasiswa",schema = "mgr")
+@Table(name = "perpustakaan",schema = "mgr")
 
 public class Books {
 
     //BOOK Id as primary key
     @Id
-
     @Column
     private int bookid;
 
     @Column
-    private String bookName;
+    private String bookname;
 
     @Column
     private String author;
@@ -38,12 +37,12 @@ public class Books {
         this.bookid = bookid;
     }
 
-    public String getBookName() {
-        return bookName;
+    public String getbookname() {
+        return bookname;
     }
 
     public void setBookName(String bookName) {
-        this.bookName = bookName;
+        this.bookname = bookName;
     }
 
     public String getAuthor() {
